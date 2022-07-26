@@ -1,0 +1,16 @@
+.window {
+    background-color: #1E1E1E;
+    padding: 15px 30px 30px;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}

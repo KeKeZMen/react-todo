@@ -1,0 +1,35 @@
+.add__task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text__input {
+    background-color: #121212;
+    padding: 7px;
+    border-radius: 10px;
+    color: #353535;
+    border: none;
+    outline: none;
+    font-family: "Montserrat";
+    width: 277px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn__add {
+    background: url("../../../public/img/inactive-add.svg") no-repeat center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn__add:hover{
+    background: url("../../../public/img/active-add.svg") no-repeat center;
+    box-shadow: 0px 0px 9px rgba(0, 209, 21, 0.56);
+}

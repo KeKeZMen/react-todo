@@ -1,0 +1,61 @@
+.task__unsuccess, .task__success {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.task__unsuccess:hover .btn__delete, .task__success:hover .btn__delete {
+    width: 20px;
+    height: 20px;
+}
+
+.btn__unsuccess {
+    background: url("../../../public/img/inactive-completed.svg") no-repeat center;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 19px;
+    transition: .4s;
+}
+
+.btn__delete {
+    background: url("../../../public/img/inactive-trash.svg") no-repeat center;
+    border: none;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn__delete:hover {
+    background: url("../../../public/img/active-trash.svg") no-repeat center;
+}
+
+.task__text {
+    text-align: left;
+    flex: 1;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    transition: .2s;
+}
+
+.task__success .btn__unsuccess{
+    background: url("../../../public/img/active-completed.svg") no-repeat center;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 19px;
+    transition: .4s;
+}
+
+.task__success .task__text{
+    text-decoration: line-through;
+    color: #7d7d7d;
+}
