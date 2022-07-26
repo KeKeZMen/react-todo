@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import classes from './tasks.module.css'
 import Task from '../Task/Task'
 

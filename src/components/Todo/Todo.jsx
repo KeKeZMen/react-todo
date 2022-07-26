@@ -2,27 +2,11 @@ import React, {useState} from "react";
 import classes from './todo.module.css'
 import Counters from '../Counter/Counters'
 import Form from "../Form/Form";
-import Tasks from "../Tasks/Tasks";
+import Taskslist from "../Tasklist/Tasklist";
 
 export default function Todo() {
 
-    const [tasks, setTasks] = useState([
-        {
-            id: 1,
-            text: '1 task',
-            success: false
-        }, 
-        {
-            id: 2,
-            text: '2 task',
-            success: false
-        }, 
-        {
-            id: 3,
-            text: '3 task',
-            success: false
-        }
-    ])
+    const [tasks, setTasks] = useState([])
 
     const deleteTask = (id) => setTasks(tasks.filter(task => task.id !== id))
 
@@ -39,7 +23,7 @@ export default function Todo() {
 
             <Counters tasks={tasks}/>
 
-            <Tasks tasks={tasks} del={deleteTask} success={setTaskState}/>
+            <Taskslist tasks={tasks} del={deleteTask} success={setTaskState}/>
 
             <Form add={addTask}/>
         </div>
