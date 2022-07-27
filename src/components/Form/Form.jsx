@@ -7,7 +7,7 @@ export default function Form({add}) {
     
     const addTask = e => {
         e.preventDefault()
-        if (input == '') return false
+        if (input === '') return false
         add({id: Date.now(), text: input, success: false})
         setInput('')
     }

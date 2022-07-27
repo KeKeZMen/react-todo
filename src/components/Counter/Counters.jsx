@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import classes from './counter.module.css'
 
 export default function Counter({tasks}){
